@@ -1,0 +1,94 @@
+-------------------------------------------------------------------------------
+Test set: net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 7, Errors: 6, Skipped: 0, Time elapsed: 1.232 sec <<< FAILURE!
+testRemoveNetPass(net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest)  Time elapsed: 0.247 sec  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.LinkedList.checkElementIndex(LinkedList.java:555)
+	at java.util.LinkedList.get(LinkedList.java:476)
+	at net.onrc.openvirtex.elements.network.OVXNetwork.setLinkPath(OVXNetwork.java:556)
+	at net.onrc.openvirtex.api.service.handlers.tenant.SetOVXLinkPath.process(SetOVXLinkPath.java:75)
+	at net.onrc.openvirtex.api.service.handlers.tenant.AbstractAPICalls.setLinkPath(AbstractAPICalls.java:159)
+	at net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest.testRemoveNetPass(PassingAPITest.java:364)
+testRemoveSwitchPass(net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.LinkedList.checkElementIndex(LinkedList.java:555)
+	at java.util.LinkedList.get(LinkedList.java:476)
+	at net.onrc.openvirtex.elements.network.OVXNetwork.setLinkPath(OVXNetwork.java:556)
+	at net.onrc.openvirtex.api.service.handlers.tenant.SetOVXLinkPath.process(SetOVXLinkPath.java:75)
+	at net.onrc.openvirtex.api.service.handlers.tenant.AbstractAPICalls.setLinkPath(AbstractAPICalls.java:159)
+	at net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest.testRemoveSwitchPass(PassingAPITest.java:416)
+testRemovePortPass(net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest)  Time elapsed: 0.003 sec  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.LinkedList.checkElementIndex(LinkedList.java:555)
+	at java.util.LinkedList.get(LinkedList.java:476)
+	at net.onrc.openvirtex.elements.network.OVXNetwork.setLinkPath(OVXNetwork.java:556)
+	at net.onrc.openvirtex.api.service.handlers.tenant.SetOVXLinkPath.process(SetOVXLinkPath.java:75)
+	at net.onrc.openvirtex.api.service.handlers.tenant.AbstractAPICalls.setLinkPath(AbstractAPICalls.java:159)
+	at net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest.testRemovePortPass(PassingAPITest.java:468)
+testDisconnectLinkPass(net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest)  Time elapsed: 0.018 sec  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.LinkedList.checkElementIndex(LinkedList.java:555)
+	at java.util.LinkedList.get(LinkedList.java:476)
+	at net.onrc.openvirtex.elements.network.OVXNetwork.setLinkPath(OVXNetwork.java:556)
+	at net.onrc.openvirtex.api.service.handlers.tenant.SetOVXLinkPath.process(SetOVXLinkPath.java:75)
+	at net.onrc.openvirtex.api.service.handlers.tenant.AbstractAPICalls.setLinkPath(AbstractAPICalls.java:159)
+	at net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest.testDisconnectLinkPass(PassingAPITest.java:521)
+testDisconnectHostPass(net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest)  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.LinkedList.checkElementIndex(LinkedList.java:555)
+	at java.util.LinkedList.get(LinkedList.java:476)
+	at net.onrc.openvirtex.elements.network.OVXNetwork.setLinkPath(OVXNetwork.java:556)
+	at net.onrc.openvirtex.api.service.handlers.tenant.SetOVXLinkPath.process(SetOVXLinkPath.java:75)
+	at net.onrc.openvirtex.api.service.handlers.tenant.AbstractAPICalls.setLinkPath(AbstractAPICalls.java:159)
+	at net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest.testDisconnectHostPass(PassingAPITest.java:574)
+testDisconnectRoutePass(net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest)  Time elapsed: 0.015 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Remove switch route should not return null
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:233)
+	at net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest.testDisconnectRoutePass(PassingAPITest.java:634)
+testCreateSingleSwitch(net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest)  Time elapsed: 0.005 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: CreateOVXSwitch should not return null
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:233)
+	at net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest.testCreateSingleSwitch(PassingAPITest.java:84)
+testCreateBigSwitch(net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest)  Time elapsed: 0.004 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: CreateOVXSwitch should not return null
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:233)
+	at net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest.testCreateBigSwitch(PassingAPITest.java:117)
+testCreatePort(net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: CreateOVXPort should not return null
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:233)
+	at net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest.testCreatePort(PassingAPITest.java:147)
+testConnectHost(net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: ConnectHost: Invalid port : The ovx port specified is invalid: tenantId, dpid, port - 1, 46200400562356225, 1
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:233)
+	at net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest.testConnectHost(PassingAPITest.java:177)
+testConnectLink(net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: ConnectOVXLink: Invalid virtual switch id : The switch id you have provided does not belong to this virtual network: 1
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:233)
+	at net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest.testConnectLink(PassingAPITest.java:228)
+testConnectRoutePass(net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: ConnectOVXRoute should not return null
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:233)
+	at net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest.testConnectRoutePass(PassingAPITest.java:307)
+testStopNetPass(net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest)  Time elapsed: 0.005 sec  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.LinkedList.checkElementIndex(LinkedList.java:555)
+	at java.util.LinkedList.get(LinkedList.java:476)
+	at net.onrc.openvirtex.elements.network.OVXNetwork.setLinkPath(OVXNetwork.java:556)
+	at net.onrc.openvirtex.api.service.handlers.tenant.SetOVXLinkPath.process(SetOVXLinkPath.java:75)
+	at net.onrc.openvirtex.api.service.handlers.tenant.AbstractAPICalls.setLinkPath(AbstractAPICalls.java:159)
+	at net.onrc.openvirtex.api.service.handlers.tenant.PassingAPITest.testStopNetPass(PassingAPITest.java:687)
